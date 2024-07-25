@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחולל הרפתקאות קסום לילדים</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4a4a4a;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #progress-container {
+            width: 100%;
+            background-color: #ddd;
+            display: none;
+        }
+        #progress-bar {
+            width: 0%;
+            height: 30px;
+            background-color: #4CAF50;
+        }
+        #story {
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 מחולל הרפתקאות קסום לילדים 🌟</h1>
+        
+        <input type="text" id="hero" placeholder="שם הגיבור/ה הראשי/ת">
+        <input type="text" id="place" placeholder="מקום ההרפתקה">
+        <input type="text" id="item" placeholder="חפץ קסום או מיוחד">
+        
+        <button onclick="generateStory()">🚀 צור הרפתקה מדהימה!</button>
+        
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        
+        <div id="story"></div>
+    </div>
+
+    <script>
+        function generateStory() {
+            // כאן תוכל להוסיף את הלוגיקה ליצירת הסיפור
+            // לדוגמה:
+            var hero = document.getElementById('hero').value;
+            var place = document.getElementById('place').value;
+            var item = document.getElementById('item').value;
+            
+            var story = `הרפתקה מדהימה של ${hero} ב${place} עם ${item} הקסום!`;
+            
+            document.getElementById('story').innerText = story;
+        }
+    </script>
+</body>
+</html>
