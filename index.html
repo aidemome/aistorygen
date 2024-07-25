@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחולל הרפתקאות קסום לילדים</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 מחולל הרפתקאות קסום לילדים 🌟</h1>
+        <div class="input-group">
+            <input type="text" id="hero" placeholder="שם הגיבור/ה הראשי/ת">
+            <input type="text" id="place" placeholder="מקום ההרפתקה">
+            <input type="text" id="item" placeholder="חפץ קסום או מיוחד">
+        </div>
+        <button onclick="generateAdventure()">🚀 צור הרפתקה מדהימה!</button>
+        
+        <div id="progress-container" class="hidden">
+            <div id="progress-bar"></div>
+        </div>
+        
+        <div id="story"></div>
+        <div id="image-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="imageLoader.js"></script>
+</body>
+</html>

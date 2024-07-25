@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #83a4d4;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(45deg, #83a4d4, #b6fbff);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 20px;
+    background: linear-gradient(45deg, #83a4d4, #b6fbff);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    transition: width 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+#story {
+    margin-top: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#image-container p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+#image-container a {
+    color: #83a4d4;
+    text-decoration: none;
+}
+
+#image-container a:hover {
+    text-decoration: underline;
+}
